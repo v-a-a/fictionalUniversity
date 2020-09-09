@@ -7,4 +7,8 @@ wp_enqueue_style( 'antonidis_main_styles', get_stylesheet_uri(), null, microtime
 }
 
 add_action( 'wp_enqueue_scripts', 'antonidis_files');
+function university_features(){
+add_theme_support( 'title-tag');
+}
+add_action('after_setup_theme', 'university_features');
 ?>
